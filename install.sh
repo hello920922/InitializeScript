@@ -14,3 +14,4 @@ sudo echo -e "<?\nphpinfo();\n?>" >> ./phpinfo.php
 sudo mv phpinfo.php /var/www/phpinfo.php
 sudo cp ./bashrc ~/.bashrc
 sudo cp ./vimrc ~/.vimrc
+source ~/.bashrc
