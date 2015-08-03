@@ -107,5 +107,5 @@ export JAVA_OPTS="-Xms512m -Xmx2048m -XX:MaxPermSize=512"
 #export JAVA_HOME=/usr/
 
 alias down='git pull origin master'
-alias up='git push origin master'
+alias up='git pull origin master; git push origin master'
 alias vi='vim'
