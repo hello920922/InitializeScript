@@ -2,13 +2,6 @@
 NOWDIR=$(pwd)
 
 #Install hbase.
-sudo cp /etc/profile $NOWDIR/profile
-sudo chmod 777 $NOWDIR/profile
-cat $NOWDIR/profile.add >> $NOWDIR/profile
-sudo chmod 644 $NOWDIR/profile
-sudo mv $NOWDIR/profile /etc/profile
-source /etc/profile
-source ~/.bashrc
 cd /usr/local
 sudo mkdir data
 
@@ -30,6 +23,7 @@ sudo apt-get install gcc
 sudo apt-get install libgd2-xpm-dev
 sudo  wget http://sourceforge.net/projects/gnuplot/files/gnuplot/4.6.3/gnuplot-4.6.3.tar.gz
 sudo tar zxvf gnuplot-4.6.3.tar.gz
+sudo rm gnuplot-4.6.3.tar.gz
 cd gnuplot-4.6.3
 sudo ./configure
 sudo make install
