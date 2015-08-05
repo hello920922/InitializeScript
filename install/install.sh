@@ -1,5 +1,5 @@
-sudo apt-get install update -y
-sudo apt-get install upgrade -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
 sudo apt-get install vim -y
 sudo apt-get install apache2 -y
 sudo apt-get install mysql-server mysql-client -y
@@ -13,5 +13,7 @@ sudo /etc/init.d/mysql restart
 sudo echo -e "<?\nphpinfo();\n?>" >> ./phpinfo.php
 sudo mv phpinfo.php /var/www/phpinfo.php
 sudo cp ./bashrc ~/.bashrc
+sudo cp ./bashrc /root/.bashrc
 sudo cp ./vimrc ~/.vimrc
+sudo cp ./vimrc /root/.vimrc
 source ~/.bashrc
